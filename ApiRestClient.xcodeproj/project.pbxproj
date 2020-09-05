@@ -10,6 +10,7 @@
 		6DE77AC46A0ACFE274B42E53 /* Pods_ApiRestClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC962EC97503BE907D47674 /* Pods_ApiRestClient.framework */; };
 		AF7D10EB25036476000EAE98 /* ApiRestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7D10E925036476000EAE98 /* ApiRestClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF7D10F32503672E000EAE98 /* ApiRestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D10F22503672E000EAE98 /* ApiRestServices.swift */; };
+		AF7D10F5250367B6000EAE98 /* ApiRestClient.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AF7D10F4250367B6000EAE98 /* ApiRestClient.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AF7D10E925036476000EAE98 /* ApiRestClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiRestClient.h; sourceTree = "<group>"; };
 		AF7D10EA25036476000EAE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7D10F22503672E000EAE98 /* ApiRestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRestServices.swift; sourceTree = "<group>"; };
+		AF7D10F4250367B6000EAE98 /* ApiRestClient.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ApiRestClient.podspec; sourceTree = "<group>"; };
 		ED1F8ED5D1D9A8EC70A24571 /* Pods-ApiRestClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiRestClient.release.xcconfig"; path = "Target Support Files/Pods-ApiRestClient/Pods-ApiRestClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 		AF7D10DC25036476000EAE98 = {
 			isa = PBXGroup;
 			children = (
+				AF7D10F4250367B6000EAE98 /* ApiRestClient.podspec */,
 				AF7D10E825036476000EAE98 /* ApiRestClient */,
 				AF7D10E725036476000EAE98 /* Products */,
 				1A57D63D31C8E5D6A9A8C872 /* Pods */,
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7D10F5250367B6000EAE98 /* ApiRestClient.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
