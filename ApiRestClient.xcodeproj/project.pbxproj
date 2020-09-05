@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DE77AC46A0ACFE274B42E53 /* Pods_ApiRestClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC962EC97503BE907D47674 /* Pods_ApiRestClient.framework */; };
 		AF7D10EB25036476000EAE98 /* ApiRestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7D10E925036476000EAE98 /* ApiRestClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF7D10F32503672E000EAE98 /* ApiRestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D10F22503672E000EAE98 /* ApiRestServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EC962EC97503BE907D47674 /* Pods_ApiRestClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiRestClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA5CE4F45F917F1D6DA7918 /* Pods-ApiRestClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiRestClient.debug.xcconfig"; path = "Target Support Files/Pods-ApiRestClient/Pods-ApiRestClient.debug.xcconfig"; sourceTree = "<group>"; };
 		AF7D10E625036476000EAE98 /* ApiRestClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiRestClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7D10E925036476000EAE98 /* ApiRestClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiRestClient.h; sourceTree = "<group>"; };
 		AF7D10EA25036476000EAE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7D10F22503672E000EAE98 /* ApiRestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRestServices.swift; sourceTree = "<group>"; };
+		ED1F8ED5D1D9A8EC70A24571 /* Pods-ApiRestClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiRestClient.release.xcconfig"; path = "Target Support Files/Pods-ApiRestClient/Pods-ApiRestClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE77AC46A0ACFE274B42E53 /* Pods_ApiRestClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A57D63D31C8E5D6A9A8C872 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEA5CE4F45F917F1D6DA7918 /* Pods-ApiRestClient.debug.xcconfig */,
+				ED1F8ED5D1D9A8EC70A24571 /* Pods-ApiRestClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D60BE4185BDDD43D4E7A75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EC962EC97503BE907D47674 /* Pods_ApiRestClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF7D10DC25036476000EAE98 = {
 			isa = PBXGroup;
 			children = (
 				AF7D10E825036476000EAE98 /* ApiRestClient */,
 				AF7D10E725036476000EAE98 /* Products */,
+				1A57D63D31C8E5D6A9A8C872 /* Pods */,
+				3D60BE4185BDDD43D4E7A75B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +72,19 @@
 		AF7D10E825036476000EAE98 /* ApiRestClient */ = {
 			isa = PBXGroup;
 			children = (
+				AF7D10F1250366F9000EAE98 /* classes */,
 				AF7D10E925036476000EAE98 /* ApiRestClient.h */,
 				AF7D10EA25036476000EAE98 /* Info.plist */,
 			);
 			path = ApiRestClient;
+			sourceTree = "<group>";
+		};
+		AF7D10F1250366F9000EAE98 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				AF7D10F22503672E000EAE98 /* ApiRestServices.swift */,
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF7D10EE25036476000EAE98 /* Build configuration list for PBXNativeTarget "ApiRestClient" */;
 			buildPhases = (
+				D58258A3D721A16B1572F2D0 /* [CP] Check Pods Manifest.lock */,
 				AF7D10E125036476000EAE98 /* Headers */,
 				AF7D10E225036476000EAE98 /* Sources */,
 				AF7D10E325036476000EAE98 /* Frameworks */,
@@ -95,6 +131,7 @@
 				TargetAttributes = {
 					AF7D10E525036476000EAE98 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -126,11 +163,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D58258A3D721A16B1572F2D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApiRestClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF7D10E225036476000EAE98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7D10F32503672E000EAE98 /* ApiRestServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +322,9 @@
 		};
 		AF7D10EF25036476000EAE98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA5CE4F45F917F1D6DA7918 /* Pods-ApiRestClient.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PYH5XH3SJ7;
@@ -277,6 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +350,9 @@
 		};
 		AF7D10F025036476000EAE98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1F8ED5D1D9A8EC70A24571 /* Pods-ApiRestClient.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PYH5XH3SJ7;
